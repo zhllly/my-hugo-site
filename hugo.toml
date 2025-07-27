@@ -1,0 +1,27 @@
+baseURL = "https://andwwlh.cn/"
+languageCode = "en-us"
+title = "My Academic Site"
+theme = "PaperMod"
+
+[params]
+  author = "王立晗"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowToc = true
+  TocOpen = true
+
+[menu]
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
