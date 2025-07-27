@@ -1,0 +1,6 @@
+[build]
+  publish = "public"
+  command = "hugo"
+
+[context.production.environment]
+  HUGO_VERSION = "0.148.1"  # 或你本地使用的 hugo 版本号
