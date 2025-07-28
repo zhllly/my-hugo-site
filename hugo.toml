@@ -1,10 +1,11 @@
 baseURL = "https://andwwlh.cn/"
 languageCode = "en-us"
-title = "My Academic Site"
+title = "Lihan Wang's Page"
 theme = "PaperMod"
 
 [params]
-  author = "王立晗"
+  customCSS = ["css/custom.css"]
+  author = "andwwlh"
   ShowReadingTime = true
   ShowShareButtons = true
   ShowCodeCopyButtons = true

@@ -1,0 +1,51 @@
+{{ define "main" }}
+<main class="main">
+  <div class="single-container">
+
+
+    <!-- 👇 欢迎语段落 -->
+    <div style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.6;">
+      👋 欢迎访问我的个人博客！<br>
+      这里分享我的科研经历、技术探索与成长故事，希望与你共同学习、进步！
+    </div>
+
+
+    <h2 style="margin-bottom: 1rem;">🎓 <span style="font-weight: 700;">个人履历</span></h2>
+    <ul style="list-style: none; padding-left: 0; margin: 0;">
+      {{ range .Site.Data.profile.education }}
+      <li style="
+  display: grid;
+  grid-template-columns: 180px 240px 20px 1fr;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  white-space: nowrap;
+">
+        <div style="font-weight: bold; text-align: center;">{{ .date }}</div>
+        <div style="text-align: center;">{{ .school }}</div>
+        <div style="text-align: center;">—</div>
+        <div style="text-align: center;">{{ .degree }}</div>
+      </li>
+      {{ end }}
+    </ul>
+
+    <h2 style="margin-top: 2rem; margin-bottom: 1rem;">🏆 <span style="font-weight: 700;">获奖荣誉</span></h2>
+    <ul style="list-style: none; padding-left: 0; margin: 0;">
+      {{ range .Site.Data.profile.honors }}
+     <li style="
+  display: grid;
+  grid-template-columns: 180px 240px 20px 1fr;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  white-space: nowrap;
+">
+        <div style="font-weight: bold; text-align: center;">{{ .date }}</div>
+        <div style="text-align: center;">{{ .left }}</div>
+        <div style="text-align: center;">—</div>
+        <div style="text-align: center;">{{ .right }}</div>
+      </li>
+      {{ end }}
+    </ul>
+
+  </div>
+</main>
+{{ end }}

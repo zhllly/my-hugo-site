@@ -1,0 +1,39 @@
+/* 表格基础样式优化 */
+table {
+  border-collapse: collapse;
+  margin: 1.2em 0;
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+table th, table td {
+  border: 1px solid #888;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+/* 暗色模式下适配 */
+@media (prefers-color-scheme: dark) {
+  table th {
+    background-color: #222;
+    color: #eee;
+    border-color: #444;
+  }
+
+  table td {
+    border-color: #444;
+  }
+}
+
+/* 亮色模式下适配 */
+@media (prefers-color-scheme: light) {
+  table th {
+    background-color: #f0f0f0;
+    color: #000;
+    border-color: #ccc;
+  }
+
+  table td {
+    border-color: #ccc;
+  }
+}
